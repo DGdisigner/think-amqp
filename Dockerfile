@@ -28,10 +28,13 @@ RUN apk add --update --no-cache \
     php7-fileinfo \
     php7-dom \
     php7-tokenizer \
+    php7-xmlwriter \
     nginx \
     && rm -f /var/cache/apk/*
 
 RUN wget https://mirrors.aliyun.com/composer/composer.phar && mv ./composer.phar /usr/bin/composer && chmod +x /usr/bin/composer
+
+RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 
 # 设定工作目录
 WORKDIR /app
