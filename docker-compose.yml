@@ -1,7 +1,7 @@
 version: "3"
 services:
   php74:
-    image: dante/alpine-php7:latest
+    image: danteleo/alpine-php7:latest
     container_name: php74-think-amqp
     ports:
       - "8886:80"

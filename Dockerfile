@@ -25,6 +25,9 @@ RUN apk add --update --no-cache \
     php7-redis \
     php7-sockets \
     php7-phar \
+    php7-fileinfo \
+    php7-dom \
+    php7-tokenizer \
     nginx \
     && rm -f /var/cache/apk/*
 
