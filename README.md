@@ -1,0 +1,1 @@
+# think-amqp for ThinkPHP6
