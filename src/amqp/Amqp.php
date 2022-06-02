@@ -1,6 +1,7 @@
 <?php
 namespace dante;
 
+use dante\amqp\driver\RabbitMQ;
 use think\Manager;
 class Amqp extends Manager
 {
@@ -8,5 +9,6 @@ class Amqp extends Manager
     public function getDefaultDriver()
     {
         // TODO: Implement getDefaultDriver() method.
+        return new RabbitMQ();
     }
 }
